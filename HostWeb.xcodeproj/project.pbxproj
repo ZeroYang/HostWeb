@@ -15,6 +15,8 @@
 		7E800BEA1B78F7DE002BCBD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E800BE91B78F7DE002BCBD1 /* Images.xcassets */; };
 		7E800BED1B78F7DE002BCBD1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E800BEB1B78F7DE002BCBD1 /* LaunchScreen.xib */; };
 		7E800BF91B78F7DF002BCBD1 /* HostWebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E800BF81B78F7DF002BCBD1 /* HostWebTests.m */; };
+		7E800C041B78F9FA002BCBD1 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E800C031B78F9FA002BCBD1 /* WebViewController.m */; };
+		7E800C071B78FA87002BCBD1 /* SUIActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E800C061B78FA87002BCBD1 /* SUIActivityIndicatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		7E800BF21B78F7DE002BCBD1 /* HostWebTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostWebTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E800BF71B78F7DE002BCBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E800BF81B78F7DF002BCBD1 /* HostWebTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostWebTests.m; sourceTree = "<group>"; };
+		7E800C021B78F9FA002BCBD1 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		7E800C031B78F9FA002BCBD1 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		7E800C051B78FA87002BCBD1 /* SUIActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUIActivityIndicatorView.h; sourceTree = "<group>"; };
+		7E800C061B78FA87002BCBD1 /* SUIActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUIActivityIndicatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 		7E800BD81B78F7DD002BCBD1 /* HostWeb */ = {
 			isa = PBXGroup;
 			children = (
+				7E800C051B78FA87002BCBD1 /* SUIActivityIndicatorView.h */,
+				7E800C061B78FA87002BCBD1 /* SUIActivityIndicatorView.m */,
+				7E800C021B78F9FA002BCBD1 /* WebViewController.h */,
+				7E800C031B78F9FA002BCBD1 /* WebViewController.m */,
 				7E800BDD1B78F7DD002BCBD1 /* AppDelegate.h */,
 				7E800BDE1B78F7DD002BCBD1 /* AppDelegate.m */,
 				7E800BE31B78F7DE002BCBD1 /* ViewController.h */,
@@ -223,9 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E800BDF1B78F7DD002BCBD1 /* AppDelegate.m in Sources */,
+				7E800C041B78F9FA002BCBD1 /* WebViewController.m in Sources */,
 				7E800BDC1B78F7DD002BCBD1 /* main.m in Sources */,
 				7E800BE51B78F7DE002BCBD1 /* ViewController.m in Sources */,
 				7E800BE21B78F7DE002BCBD1 /* HostWeb.xcdatamodeld in Sources */,
+				7E800C071B78FA87002BCBD1 /* SUIActivityIndicatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
