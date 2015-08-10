@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "IntroViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // set start view controller
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"isFirst"]) {
+        IntroViewController *intro = [[IntroViewController alloc] init];
+        UINavigationController *naviMain = [[UINavigationController alloc] initWithRootViewController:intro];
+        self.window.rootViewController = naviMain;
+        
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isFirst"];
+    }
+//    else
+//    {
+//        MainViewController *mainVC = [[MainViewController alloc] init];
+//        UINavigationController *naviMain = [[UINavigationController alloc] initWithRootViewController:mainVC];
+//        self.window.rootViewController = naviMain;
+//    }
+    
     return YES;
 }
 

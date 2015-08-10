@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C843D13B-DAB1-48DE-B16B-3CA4563688D3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>32697D5D055F3C7A369A28A5585EA88CBA52457C</key>
+		<string>https://github.com/ZeroYang/HostWeb.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HostWeb.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>32697D5D055F3C7A369A28A5585EA88CBA52457C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ZeroYang/HostWeb.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>32697D5D055F3C7A369A28A5585EA88CBA52457C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>32697D5D055F3C7A369A28A5585EA88CBA52457C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HostWeb</string>
+		</dict>
+	</array>
+</dict>
+</plist>
