@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E297DB91B861110004E0873 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E297DB41B861110004E0873 /* Default-568h@2x.png */; };
+		7E297DBA1B861110004E0873 /* Default-iOS8-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E297DB51B861110004E0873 /* Default-iOS8-667h@2x.png */; };
+		7E297DBB1B861110004E0873 /* Default-iOS8-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E297DB61B861110004E0873 /* Default-iOS8-736h@3x.png */; };
+		7E297DBC1B861110004E0873 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E297DB71B861110004E0873 /* Default.png */; };
+		7E297DBD1B861110004E0873 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E297DB81B861110004E0873 /* Default@2x.png */; };
 		7E800BDC1B78F7DD002BCBD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E800BDB1B78F7DD002BCBD1 /* main.m */; };
 		7E800BDF1B78F7DD002BCBD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E800BDE1B78F7DD002BCBD1 /* AppDelegate.m */; };
 		7E800BE21B78F7DE002BCBD1 /* HostWeb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E800BE01B78F7DE002BCBD1 /* HostWeb.xcdatamodeld */; };
@@ -32,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E297DB41B861110004E0873 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7E297DB51B861110004E0873 /* Default-iOS8-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-iOS8-667h@2x.png"; sourceTree = "<group>"; };
+		7E297DB61B861110004E0873 /* Default-iOS8-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-iOS8-736h@3x.png"; sourceTree = "<group>"; };
+		7E297DB71B861110004E0873 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7E297DB81B861110004E0873 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7E800BD61B78F7DD002BCBD1 /* HostWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E800BDA1B78F7DD002BCBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E800BDB1B78F7DD002BCBD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,9 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E297DB31B861110004E0873 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				7E297DB41B861110004E0873 /* Default-568h@2x.png */,
+				7E297DB51B861110004E0873 /* Default-iOS8-667h@2x.png */,
+				7E297DB61B861110004E0873 /* Default-iOS8-736h@3x.png */,
+				7E297DB71B861110004E0873 /* Default.png */,
+				7E297DB81B861110004E0873 /* Default@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		7E800BCD1B78F7DC002BCBD1 = {
 			isa = PBXGroup;
 			children = (
+				7E297DB31B861110004E0873 /* image */,
 				7E800BD81B78F7DD002BCBD1 /* HostWeb */,
 				7E800BF51B78F7DE002BCBD1 /* HostWebTests */,
 				7E800BD71B78F7DD002BCBD1 /* Products */,
@@ -224,9 +247,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E297DBD1B861110004E0873 /* Default@2x.png in Resources */,
 				7E800BE81B78F7DE002BCBD1 /* Main.storyboard in Resources */,
+				7E297DB91B861110004E0873 /* Default-568h@2x.png in Resources */,
 				7E800BED1B78F7DE002BCBD1 /* LaunchScreen.xib in Resources */,
 				7E800BEA1B78F7DE002BCBD1 /* Images.xcassets in Resources */,
+				7E297DBC1B861110004E0873 /* Default.png in Resources */,
+				7E297DBB1B861110004E0873 /* Default-iOS8-736h@3x.png in Resources */,
+				7E297DBA1B861110004E0873 /* Default-iOS8-667h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,8 +408,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HostWeb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -390,8 +420,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HostWeb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -448,6 +480,7 @@
 				7E800BFE1B78F7DF002BCBD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E800BFF1B78F7DF002BCBD1 /* Build configuration list for PBXNativeTarget "HostWebTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +489,7 @@
 				7E800C011B78F7DF002BCBD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
