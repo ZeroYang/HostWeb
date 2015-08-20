@@ -34,8 +34,10 @@
     UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:webView];
     //NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
+    resoureUrl = @"http://125.64.24.34:85/app/Login/login.htm";
     NSURL *url = [NSURL URLWithString:resoureUrl];
-    NSURLRequest *request =[NSURLRequest requestWithURL:url];
+    //NSURLRequest *request =[NSURLRequest requestWithURL:url];
+    NSURLRequest *request =[NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15.0f];
     [webView loadRequest:request];
     
     webView.delegate = self;
