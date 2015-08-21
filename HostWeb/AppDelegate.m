@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "IntroViewController.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,12 +28,12 @@
         
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isFirst"];
     }
-//    else
-//    {
-//        MainViewController *mainVC = [[MainViewController alloc] init];
-//        UINavigationController *naviMain = [[UINavigationController alloc] initWithRootViewController:mainVC];
-//        self.window.rootViewController = naviMain;
-//    }
+    else
+    {
+        MainViewController *mainVC = [[MainViewController alloc] init];
+        UINavigationController *naviMain = [[UINavigationController alloc] initWithRootViewController:mainVC];
+        self.window.rootViewController = naviMain;
+    }
     
     return YES;
 }

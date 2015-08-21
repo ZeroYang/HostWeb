@@ -7,10 +7,12 @@
 //
 
 #import "MainViewController.h"
-#import "WebViewController.h"
+#import "SUIActivityIndicatorView.h"
 
-@interface MainViewController ()
-
+@interface MainViewController ()<UIWebViewDelegate>
+{
+    SUIActivityIndicatorView *activityView;
+}
 @end
 
 @implementation MainViewController
@@ -19,12 +21,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIButton *startWeb = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
-    [self.view addSubview:startWeb];
-    [startWeb setTitle:@"startWeb" forState:UIControlStateNormal];
-    [startWeb addTarget:self action:@selector(startWeb:) forControlEvents:UIControlEventTouchUpInside];
+    self.view.backgroundColor = [UIColor colorWithRed:240.0f green:247.0f blue:254.0f alpha:255.0f];
     
-    self.view.backgroundColor = [UIColor blueColor];
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:webView];
+    //NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
+    //NSString *resoureUrl = @"http://125.64.24.34:85/app/Login/login.htm";
+    NSString *resoureUrl = @"http://zyet.cdxkkj.net/app/login/login.htm";
+    NSURL *url = [NSURL URLWithString:resoureUrl];
+    //NSURLRequest *request =[NSURLRequest requestWithURL:url];
+    NSURLRequest *request =[NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:5.0f];
+    [webView loadRequest:request];
+    
+    webView.delegate = self;
+    
+    activityView = [[SUIActivityIndicatorView alloc] init];
+    [activityView showWaitingInViewController:self];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,12 +45,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)startWeb:(id)sender
+
+#pragma UIWebViewDelegate #
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    WebViewController* a =  [[WebViewController alloc] init];
-    a.resoureUrl = @"http://www.baidu.com";
-    
-    [self presentViewController:a animated:YES completion:nil];
+    NSLog(@"load start");
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    NSLog(@"load finish");
+    [activityView hideWaiting];
+}
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    NSLog(@"webView load error:%@",[error description]);
+    [activityView hideWaiting];
 }
 
 @end

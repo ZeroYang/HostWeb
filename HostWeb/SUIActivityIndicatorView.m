@@ -20,7 +20,7 @@
 {
     activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 32.0f, 32.0f)];
     [activityIndicator setCenter:vc.view.center];
-    activityIndicator.backgroundColor = [UIColor grayColor];
+    activityIndicator.backgroundColor = [UIColor colorWithRed:250.0f green:250.0f blue:250.0f alpha:255.0f];
     [activityIndicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhite];
     [activityIndicator startAnimating];
     [vc.view addSubview:activityIndicator];
