@@ -116,6 +116,9 @@
 {
     UIViewController *mainPage = [[MainViewController alloc] init];
     [self.navigationController pushViewController:mainPage animated:NO];
+    
+//    [self dismissViewControllerAnimated:NO completion:nil];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isFirst"];
 }
 
 

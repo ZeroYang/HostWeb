@@ -26,14 +26,15 @@
         UINavigationController *naviMain = [[UINavigationController alloc] initWithRootViewController:intro];
         self.window.rootViewController = naviMain;
         
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isFirst"];
+        //[[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isFirst"];
     }
     else
     {
-        MainViewController *mainVC = [[MainViewController alloc] init];
-        UINavigationController *naviMain = [[UINavigationController alloc] initWithRootViewController:mainVC];
-        self.window.rootViewController = naviMain;
+//        MainViewController *mainVC = [[MainViewController alloc] init];
+//        UINavigationController *naviMain = [[UINavigationController alloc] initWithRootViewController:mainVC];
+//        self.window.rootViewController = naviMain;
     }
+    
     
     return YES;
 }

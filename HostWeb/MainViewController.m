@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "SUIActivityIndicatorView.h"
+#import "IntroViewController.h"
 
 @interface MainViewController ()<UIWebViewDelegate>
 {
@@ -17,11 +18,23 @@
 
 @implementation MainViewController
 
+
+-(void) viewWillAppear:(BOOL)animated
+{
+//    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"isFirst"]) {
+//        IntroViewController *intro = [[IntroViewController alloc] init];
+//        [self presentViewController:intro animated:NO completion:nil];
+//    }
+    
+    [self.navigationController setNavigationBarHidden:YES];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.view.backgroundColor = [UIColor colorWithRed:240.0f green:247.0f blue:254.0f alpha:255.0f];
+    self.view.backgroundColor = [UIColor colorWithRed:240.0f/255.0f green:247.0f/255.0f blue:254.0f/255.0f alpha:1.0f];
     
     UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:webView];
