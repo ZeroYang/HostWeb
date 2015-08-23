@@ -8,11 +8,12 @@
 
 #import "MainViewController.h"
 #import "SUIActivityIndicatorView.h"
-#import "IntroViewController.h"
+#import "IntroView.h"
 
-@interface MainViewController ()<UIWebViewDelegate>
+@interface MainViewController ()<UIWebViewDelegate, IntroViewDelegate>
 {
     SUIActivityIndicatorView *activityView;
+    IntroView *introView;
 }
 @end
 
@@ -21,13 +22,11 @@
 
 -(void) viewWillAppear:(BOOL)animated
 {
-//    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"isFirst"]) {
-//        IntroViewController *intro = [[IntroViewController alloc] init];
-//        [self presentViewController:intro animated:NO completion:nil];
-//    }
-    
-    [self.navigationController setNavigationBarHidden:YES];
-    
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"isFirst"]) {
+        introView = [[IntroView alloc] initWithFrame:self.view.bounds];
+        introView.delegate = self;
+        [introView showinView:self.view];
+    }
 }
 
 - (void)viewDidLoad {
@@ -76,6 +75,19 @@
 {
     NSLog(@"webView load error:%@",[error description]);
     [activityView hideWaiting];
+}
+
+#pragma IntroViewDelegate #
+
+-(void)onDoneButtonPressed
+{
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isFirst"];
+    
+    [UIView animateWithDuration:1.0 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        introView.alpha = 0;
+    } completion:^(BOOL finished) {
+        [introView removeFromSuperview];
+    }];
 }
 
 @end
