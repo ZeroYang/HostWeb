@@ -13,6 +13,7 @@
 		7E297DDF1B878151004E0873 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E297DDA1B878151004E0873 /* Default.png */; };
 		7E297DE01B878151004E0873 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E297DDB1B878151004E0873 /* Default@2x.png */; };
 		7E297E0F1B89AEE7004E0873 /* IntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E297E0E1B89AEE7004E0873 /* IntroView.m */; };
+		7E297E181B8A159E004E0873 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E297E171B8A159E004E0873 /* InfoPlist.strings */; };
 		7E800BDC1B78F7DD002BCBD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E800BDB1B78F7DD002BCBD1 /* main.m */; };
 		7E800BDF1B78F7DD002BCBD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E800BDE1B78F7DD002BCBD1 /* AppDelegate.m */; };
 		7E800BE21B78F7DE002BCBD1 /* HostWeb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E800BE01B78F7DE002BCBD1 /* HostWeb.xcdatamodeld */; };
@@ -43,7 +44,8 @@
 		7E297DDB1B878151004E0873 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7E297E0D1B89AEE7004E0873 /* IntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroView.h; sourceTree = "<group>"; };
 		7E297E0E1B89AEE7004E0873 /* IntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroView.m; sourceTree = "<group>"; };
-		7E800BD61B78F7DD002BCBD1 /* HostWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E297E171B8A159E004E0873 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		7E800BD61B78F7DD002BCBD1 /* gzyet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gzyet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E800BDA1B78F7DD002BCBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E800BDB1B78F7DD002BCBD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E800BDD1B78F7DD002BCBD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,7 +109,7 @@
 		7E800BD71B78F7DD002BCBD1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E800BD61B78F7DD002BCBD1 /* HostWeb.app */,
+				7E800BD61B78F7DD002BCBD1 /* gzyet.app */,
 				7E800BF21B78F7DE002BCBD1 /* HostWebTests.xctest */,
 			);
 			name = Products;
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				7E800BDA1B78F7DD002BCBD1 /* Info.plist */,
+				7E297E171B8A159E004E0873 /* InfoPlist.strings */,
 				7E800BDB1B78F7DD002BCBD1 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -179,7 +182,7 @@
 			);
 			name = HostWeb;
 			productName = HostWeb;
-			productReference = 7E800BD61B78F7DD002BCBD1 /* HostWeb.app */;
+			productReference = 7E800BD61B78F7DD002BCBD1 /* gzyet.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7E800BF11B78F7DE002BCBD1 /* HostWebTests */ = {
@@ -225,6 +228,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 7E800BCD1B78F7DC002BCBD1;
 			productRefGroup = 7E800BD71B78F7DD002BCBD1 /* Products */;
@@ -249,6 +253,7 @@
 				7E800BEA1B78F7DE002BCBD1 /* Images.xcassets in Resources */,
 				7E297DDF1B878151004E0873 /* Default.png in Resources */,
 				7E297DDE1B878151004E0873 /* Default-iOS8-736h@3x.png in Resources */,
+				7E297E181B8A159E004E0873 /* InfoPlist.strings in Resources */,
 				7E297DDD1B878151004E0873 /* Default-iOS8-667h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +409,7 @@
 				INFOPLIST_FILE = HostWeb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = gzyet;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -416,7 +421,7 @@
 				INFOPLIST_FILE = HostWeb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = gzyet;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
