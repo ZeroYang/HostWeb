@@ -77,6 +77,12 @@
     [activityView hideWaiting];
 }
 
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    //request.mainDocumentURL.
+    return YES;
+}
+
 #pragma IntroViewDelegate #
 
 -(void)onDoneButtonPressed

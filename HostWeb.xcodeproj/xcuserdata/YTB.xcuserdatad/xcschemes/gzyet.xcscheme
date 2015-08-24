@@ -20,20 +20,6 @@
                ReferencedContainer = "container:HostWeb.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7E800BF11B78F7DE002BCBD1"
-               BuildableName = "HostWebTests.xctest"
-               BlueprintName = "HostWebTests"
-               ReferencedContainer = "container:HostWeb.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7E800BF11B78F7DE002BCBD1"
-               BuildableName = "HostWebTests.xctest"
-               BlueprintName = "HostWebTests"
-               ReferencedContainer = "container:HostWeb.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
