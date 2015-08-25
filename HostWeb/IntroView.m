@@ -65,14 +65,14 @@
     [startButton setBackgroundImage:[UIImage imageNamed:@"btn_start.png"]
                            forState:UIControlStateNormal];
     [startButton setTitle:@"立即体验" forState:UIControlStateNormal];
-    startButton.frame = CGRectMake(screen_width * 3 + (screen_width - btn_width) / 2, screen_height - btn_height - 80, btn_width, btn_height);
+    startButton.frame = CGRectMake(screen_width * 3 + (screen_width - btn_width) / 2, screen_height - btn_height - 70, btn_width, btn_height);
     [startButton addTarget:self.delegate action:@selector(onDoneButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     
     [_scroll addSubview:startButton];
 
 
     _pageControl = [[MMPageControl alloc] initWithFrame:
-                    CGRectMake(0, screen_height - btn_height - 40, self.frame.size.width, 50)];
+                    CGRectMake(0, screen_height - btn_height - 30, self.frame.size.width, 50)];
     _pageControl.activeImage = [UIImage imageNamed:@"img_dot_after.png"];
     _pageControl.inactiveImage = [UIImage imageNamed:@"img_dot_normal.png"];
     _pageControl.dotGap = 20;

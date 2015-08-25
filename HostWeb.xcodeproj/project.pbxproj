@@ -398,12 +398,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Caide Huang (T7HVFB5N98)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Caide Huang (X9AGHM8EXN)";
 				INFOPLIST_FILE = HostWeb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = gzyet;
-				PROVISIONING_PROFILE = "70df7396-5c5e-450e-b781-528b661a6d01";
+				PROVISIONING_PROFILE = "f3429ee9-320a-4a2b-a956-63ce1aa021b6";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -412,12 +412,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Caide Huang (T7HVFB5N98)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Caide Huang (X9AGHM8EXN)";
 				INFOPLIST_FILE = HostWeb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = gzyet;
-				PROVISIONING_PROFILE = "70df7396-5c5e-450e-b781-528b661a6d01";
+				PROVISIONING_PROFILE = "f3429ee9-320a-4a2b-a956-63ce1aa021b6";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
